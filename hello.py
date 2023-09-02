@@ -55,6 +55,10 @@ with st.chat_message("ai", avatar= "🤖"):
 
 
 
+     st.chat_input("Hello")
+
+
+
 
 
 with st.container():
