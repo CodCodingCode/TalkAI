@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
 st.header('st.button')
 with st.container():
-     left, mid, right = st.columns(3)
+     left, mid, right = st.columns([1, 1, 1])
      with left:
           if st.button('+ What is TalkAI?'):
                st.write('TalkAI uses top-of-the-line technology to connect everyone across the world.')
