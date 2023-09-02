@@ -14,18 +14,13 @@ with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with left:
           if st.button('+ What is Verticai?'):
-               st.write('Verticai uses top-of-the-line technology to connect everyone across the world.')
-               st.write("Its free translation features make problems like language barriers much easier to solve.")
-               st.write("Verticai was created to tackle to everlasting issues of accessibility in our countries,")
-               st.write("though language barriers in different areas.")
+               st.write("Verticai uses top-of-the-line technology to connect everyone across the world. Its free translation features make problems like language barriers much easier to solve. Verticai was created to tackle to everlasting issues of accessibility in our countries, though language barriers in different areas.")
      with mid:
           if st.button("+ Is Verticai free?"):
-               st.write("Yes, Verticai is completely free! However, there will be a paid version")
-               st.write("to enhance the quality of those who seek better education.")
+               st.write("Yes, Verticai is completely free! However, there will be a paid version to enhance the quality of those who seek better education.")
      with right:
           if st.button("+ Does Verticai use Streamlit?"):
-               st.write("Yes! Streamlit's extremely compatible website capabilities")
-               st.write("help out with the web creation at Verticai!")
+               st.write("Yes! Streamlit's extremely compatible website capabilities help out with the web creation at Verticai!")
 
 
 st.header("People from everywhere aroun the world don't have access to solid education")
