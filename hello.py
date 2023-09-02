@@ -50,6 +50,13 @@ with st.container():
           if st.button("+ Does Verticai support cheating?"):
                st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational resources.")
 
+with st.chat_message("ai", avatar= "🤖"):
+st.write("Hello 👋")
+st.line_chart(np.random.randn(30, 3))
+
+st.chat_input("Say something")
+
+
 
 
 with st.container():
@@ -60,15 +67,8 @@ with st.container():
                grade = st.number_inputer("What is your grade?")
                country = st.text_input("What is your country?")
 
-with st.chat_message("ai", avatar= "🤖"):
-st.write("Hello 👋")
-st.line_chart(np.random.randn(30, 3))
-
-st.chat_input("Say something")
-
 
 st.header("People from everywhere around the world don't have access to solid education")
-st.title("ChatGPT-like ChatBot")
 
 
 
