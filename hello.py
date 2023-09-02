@@ -30,6 +30,14 @@ g = st.slider("50", 0, 100, disabled=True)
 for i in range(1, 50):
      g = g+1
 
+tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+
+with tab1:
+     st.write("hello")
+with tab2:
+     st.write("no")
+                     
+
 
 # Insert a chat message container.
 with st.chat_message("user"):
