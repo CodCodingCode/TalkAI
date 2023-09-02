@@ -21,7 +21,25 @@ with r:
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with left:
-          if st.button('+ What is Verticai?'):
+          if st.markdown(
+                   """
+               <style>
+               button {
+                   height: auto;
+                   padding-top: 10px !important;
+                   padding-bottom: 10px !important;
+               }
+               </style>
+               """,
+                   unsafe_allow_html=True,
+               )
+               
+               instructionCol, buttonCol = st.columns([4,1])
+               with instructionCol:
+                   with st.expander("Instructions"):
+                       st.write("Pretend these are the instructions.")
+               with buttonCol:
+                   st.button("\nRestart\n", on_click=board.reset)
                st.write("Verticai uses top-of-the-line technology to help students in need with tutoring and mentorship!")
      with mid:
           if st.button("+ Is Verticai free?"):
