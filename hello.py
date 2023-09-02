@@ -27,6 +27,13 @@ with st.container():
                st.write("yes!")
 
 st.header("Over 75% of the world doesnt speak english AT ALL")
+
+with st.chat_message("user"):
+    st.write("Hello 👋")
+    st.line_chart(np.random.randn(30, 3))
+
+# Display a chat input widget.
+>>> st.chat_input("Say something")
                     
 
           
