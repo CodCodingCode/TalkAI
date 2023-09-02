@@ -2,11 +2,17 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import streamlit as st
+import requests
+import streamlit_lottie from  st_lottie
 
+def func(url):
+     r = get.requests(url)
+     if request != 200:
+          return None
+     return r.json()
 
-st.markdown("<h1 style='text-align: center; color: grey;'>Big headline</h1>", unsafe_allow_html=True)
+var = func("https://lottie.host/9993e8bf-aa90-4495-b5b0-f188e94a55a7/crWAMmvBzR.json")
 
-st.markdown("<h2 style='text-align: center; color: black;'>Smaller headline in black </h2>", unsafe_allow_html=True)
 
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
 l, r, m = st.columns([1, 1, 1])
@@ -35,6 +41,9 @@ with st.chat_message("user"):
 
 # Display a chat input widget.
 st.chat_input("Say something")
+
+
+st_lottie(var, height=300, key = "coding")
                     
 
           
