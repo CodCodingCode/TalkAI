@@ -27,7 +27,7 @@ with st.container():
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with left:
-          if st.button('+ What is Verticai's end goal'):
+          if st.button("+ What is Verticai's end goal"):
                st.write("Verticai wishes to give everyone a free mentor that can help them with their school work. From any question, to any test, Verticai will do its best to support the inequality in education.")
      with mid:
           if st.button("+ Can Verticai answer any question?"):
