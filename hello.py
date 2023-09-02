@@ -30,7 +30,7 @@ with st.container():
 # Insert a chat message container.
 with st.chat_message("user"):
      st.write("Hello 👋")
-     st.line_chart(np.random.randn(30, 5))
+     st.line_chart(np.random.randn(300, 2))
 
 # Display a chat input widget.
 st.chat_input("Say something")
