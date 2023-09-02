@@ -58,10 +58,13 @@ with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with mid:
           if st.button("+ Get Started"):
-               subject = st.text_input("What is your subject?")
-               grade = st.number_input("What is your grade?")
-               country = st.text_input("What is your country?")
-
+               while I<3:
+                    subject = st.text_input("What is your subject?")
+                    I=I+1
+                    grade = st.number_input("What is your grade?")
+                    I=I+1
+                    country = st.text_input("What is your country?")
+                    I=I+1
 
 
 st.header("People from everywhere around the world don't have access to solid education")
