@@ -4,6 +4,7 @@ from PIL import Image
 import streamlit as st
 import requests
 
+
 st.set_page_config(page_title="Verticai", page_icon=":globe_with_meridians", layout="wide")
 l, r, m = st.columns([1, 1, 1])
 with r: 
