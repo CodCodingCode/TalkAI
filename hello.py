@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import streamlit as st
+from time import sleep
 
 progress_bar = st.progress(0)
 status_text = st.empty()
