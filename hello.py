@@ -4,7 +4,9 @@ from PIL import Image
 import streamlit as st
 
 
+st.markdown("<h1 style='text-align: center; color: grey;'>Big headline</h1>", unsafe_allow_html=True)
 
+st.markdown("<h2 style='text-align: center; color: black;'>Smaller headline in black </h2>", unsafe_allow_html=True)
 
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
 l, r, m = st.columns([1, 1, 1])
