@@ -64,7 +64,7 @@ with st.container():
      with mid:
           if st.button("+ Get Started"):
                subject = st.text_input("What is your subject?")
-               grade = st.number_inputer("What is your grade?")
+               grade = st.number_input("What is your grade?")
                country = st.text_input("What is your country?")
 
 
