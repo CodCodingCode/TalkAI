@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 from PIL import Image
 
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
