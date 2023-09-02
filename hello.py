@@ -25,19 +25,7 @@ for i in range(100):
 
 status_text.text('Done!')
 st.balloons()
-                     
-
-
-
-
-
-# Insert a chat message container.
-with st.chat_message("user"):
-     st.write("Hello 👋")
-     st.line_chart(np.random.randn(300, 2))
-
-# Display a chat input widget.
-st.chat_input("Say something")
+                    
 
           
 
