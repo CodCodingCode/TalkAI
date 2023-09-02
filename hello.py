@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 import requests
-import streamlit_lottie from  st_lottie
+from streamlit_lottie import st_lottie
 
 def func(url):
      r = get.requests(url)
