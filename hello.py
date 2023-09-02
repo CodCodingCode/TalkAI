@@ -3,8 +3,10 @@ import numpy as np
 from PIL import Image
 
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
+l, r, m = st.columns([1, 1, 1])
+with r: 
+     st.header('TalkAI')
 
-st.header('TalkAI')
 
 
 # Insert a chat message container.
