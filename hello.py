@@ -2,6 +2,9 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 from configure import auth_key
+import streamlit as st
+from audiorecorder import audiorecorder
+
 
 
 
@@ -34,5 +37,16 @@ with st.chat_message("user"):
 
 # Display a chat input widget.
 st.chat_input("Say something")
+
+st.title("Audio Recorder")
+audio = audiorecorder("Click to record", "Recording...")
+
+if len(audio) > 0:
+    # To play audio in frontend:
+    st.audio(audio.tobytes())
+    
+    # To save audio to a file:
+    wav_file = open("audio.mp3", "wb")
+    wav_file.write(audio.tobytes())
           
 
