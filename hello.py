@@ -31,8 +31,8 @@ with st.container():
                }
                </style>
                """,
-                   unsafe_allow_html=True,)
-               
+                   unsafe_allow_html=True,
+               )
                instructionCol, buttonCol = st.columns([4,1])
                with instructionCol:
                    with st.expander("Instructions"):
