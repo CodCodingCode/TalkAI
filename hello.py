@@ -8,8 +8,7 @@ st.set_page_config(page_title="Verticai", page_icon=":School", layout="wide")
 l, r, m = st.columns([1, 1, 1])
 with r: 
      st.title("Verticai")
-
-st.subheader("An AI mentor by your side!")
+     st.subheader("An AI mentor by your side!")
 
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
