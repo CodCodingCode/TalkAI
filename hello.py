@@ -23,6 +23,20 @@ with st.container():
                st.write("Yes! Streamlit's extremely compatible website capabilities help out with the web creation at Verticai!")
 
 
+
+with st.container():
+     left, mid, right = st.columns([1, 1, 1])
+     with left:
+          if st.button('+ What is Verticai's end goal'):
+               st.write("Verticai wishes to give everyone a free mentor that can help them with their school work. From any question, to any test, Verticai will do its best to support the inequality in education.")
+     with mid:
+          if st.button("+ Can Verticai answer any question?"):
+               st.write("So far, Verticai is in training and can only answer a few questions from various Canadian textbooks like Pearson, etc")
+     with right:
+          if st.button("+ Does Verticai support cheating?"):
+               st.write("No, Verticai implicitly tries to support good usage of education and helps to empower the world by giving everyone access to education and mentoring rescources")
+
+
 st.header("People from everywhere aroun the world don't have access to solid education")
 
 
