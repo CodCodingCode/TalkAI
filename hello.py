@@ -17,6 +17,7 @@ with st.container():
      with right:
           if st.button("+ Does TalkAI use Streamlit?"):
                st.write("yes!")
+a = st.sidebar.radio('Choose:',[1,2]
           
 
 
