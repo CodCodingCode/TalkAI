@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("hello")
 
-img1 = Image.open("Images/Image1.jpeg")
+img1 = Image.open("Image1.jpeg")
 
 st.subheader("what is this")
 
