@@ -34,4 +34,4 @@ with st.chat_message("user"):
 x = st.chat_input("Input your textbook URL")
 
 
-if x == "
+if x == "":
