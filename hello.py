@@ -16,7 +16,15 @@ with r:
      </style>
      """, unsafe_allow_html=True)
      st.markdown('<p class="big-font"> Verticai</p>', unsafe_allow_html=True)
-     st.subheader("An AI mentor by your side!")
+          st.markdown("""
+     <style>
+     .big-font {
+         font-size:50px !important;
+         text-align: center
+     }
+     </style>
+     """, unsafe_allow_html=True)
+     st.markdown('<p class="big-font"> An AI mentor by your side!</p>', unsafe_allow_html=True)
 
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
