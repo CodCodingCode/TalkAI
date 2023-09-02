@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 import requests
-import openai
 
 st.set_page_config(page_title="Verticai", page_icon=":School", layout="wide")
 l, r, m = st.columns([1, 1, 1])
