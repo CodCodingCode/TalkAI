@@ -28,7 +28,7 @@ with st.container():
 
 g = st.slider("50", 0, 100, disabled=True)
 for i in range(1, 50):
-     g += g
+     g = g+1
 
 
 # Insert a chat message container.
