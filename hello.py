@@ -7,7 +7,14 @@ import requests
 st.set_page_config(page_title="Verticai", page_icon=":School", layout="wide")
 l, r, m = st.columns([1, 1, 1])
 with r: 
-     st.title("Verticai")
+     st.markdown("""
+     <style>
+     .big-font {
+         font-size:300px !important;
+     }
+     </style>
+     """, unsafe_allow_html=True)
+     st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
      st.subheader("An AI mentor by your side!")
 
 with st.container():
