@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(page_title="TalkAI", page_icon=":globe_with_merdians", layout="wide")
 st.header('st.button')
 
 if st.button('Say hello'):
