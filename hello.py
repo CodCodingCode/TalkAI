@@ -58,7 +58,7 @@ message.write("Hello human")
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with mid:
-          if st.button("+ Can Verticai answer any question?")
+          if st.button("+ Can Verticai answer any question?"):
                with st.form(key='my_form'):
                     subject = st.text_input("What is your subject?")
                     grade = st.number_input("What is your grade?")
