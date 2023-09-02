@@ -46,6 +46,3 @@ with st.chat_message("user"):
 
 # Display a chat input widget.
 x = st.chat_input("Input your textbook URL")
-
-
-if x == "":
