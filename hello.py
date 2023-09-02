@@ -50,9 +50,8 @@ with st.container():
           if st.button("+ Does Verticai support cheating?"):
                st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational resources.")
 
-with st.container():
-     with st.chat_message("ai", avatar= "🤖"):
-          st.write("WHat is up!")
+with st.chat_message("ai", avatar= "🤖"):
+     st.write("What is up!")
 
 
 
