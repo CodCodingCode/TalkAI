@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-from configure import auth_key
 import streamlit as st
 from audiorecorder import audiorecorder
 
