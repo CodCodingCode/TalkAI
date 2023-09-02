@@ -52,10 +52,7 @@ with st.container():
 
 with st.container():
      with st.chat_message("ai", avatar= "🤖"):
-          st.write("Hello 👋")
-          st.line_chart(np.random.randn(30, 3))
-          
-          st.chat_input("Say something")
+          st.write("WHat is up!")
 
 
 
