@@ -58,11 +58,10 @@ with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with mid:
           with st.form(key='my_form'):
-               while I<3:
-                    subject = st.text_input("What is your subject?")
-                    grade = st.number_input("What is your grade?")
-                    country = st.text_input("What is your country?")
-                    st.formb_submit_button("yes")
+               subject = st.text_input("What is your subject?")
+               grade = st.number_input("What is your grade?")
+               country = st.text_input("What is your country?")
+               st.formb_submit_button("yes")
 
 
 st.header("People from everywhere around the world don't have access to solid education")
