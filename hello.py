@@ -51,7 +51,8 @@ with st.container():
                st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational resources.")
 
 
-
+message = st.chat_message("assistant")
+message.write("Hello human")
 
 
 with st.container():
