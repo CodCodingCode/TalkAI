@@ -36,5 +36,5 @@ with st.chat_message("user"):
 
 
 # Display a chat input widget.
-st.chat_input("Input your textbook url")
+x = st.chat_input("Input your textbook url")
         
