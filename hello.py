@@ -57,11 +57,12 @@ with st.container():
 with st.container():
      left, mid, right = st.columns([1, 1, 1])
      with mid:
-          with st.form(key='my_form'):
-               subject = st.text_input("What is your subject?")
-               grade = st.number_input("What is your grade?")
-               country = st.text_input("What is your country?")
-               st.formb_submit_button("yes")
+          if st.button("+ Can Verticai answer any question?")
+               with st.form(key='my_form'):
+                    subject = st.text_input("What is your subject?")
+                    grade = st.number_input("What is your grade?")
+                    country = st.text_input("What is your country?")
+                    st.formb_submit_button("yes")
 
 
 st.header("People from everywhere around the world don't have access to solid education")
