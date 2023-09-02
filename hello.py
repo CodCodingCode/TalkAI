@@ -11,10 +11,11 @@ with r:
      <style>
      .big-font {
          font-size:100px !important;
+         text-align: center
      }
      </style>
      """, unsafe_allow_html=True)
-     st.markdown('<p class="big-font"> Verticai !!</p>', unsafe_allow_html=True)
+     st.markdown('<p class="big-font"> Verticai</p>', unsafe_allow_html=True)
      st.subheader("An AI mentor by your side!")
 
 with st.container():
