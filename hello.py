@@ -51,7 +51,7 @@ with st.container():
                st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational resources.")
 
 with st.container():
-     left, mid, right = st.columns([1, 3, 1])
+     left, mid, right = st.columns([1, 1, 1])
      with mid:
           if st.button("+ Get Started"):
                subject = st.text_input("What is your subject?")
