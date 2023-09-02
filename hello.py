@@ -49,45 +49,19 @@ with st.container():
                st.write("So far, Verticai is in training and can only answer a few questions from various Canadian textbooks like Pearson, Nelson, etc.")
      with right:
           if st.button("+ Does Verticai support cheating?"):
-               st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational rescources.")
+               st.write("No, Verticai implicitly supports good usage of education by giving everyone access to educational resources.")
+
+with st.container():
+     left, mid, right = st.columns([1, 3, 1])
+     with mid:
+          if st.button("+ Get Started"):
+               subject = st.text_input("What is your subject?")
+               grade = st.number_inputer("What is your grade?")
+               country = st.text_input("What is your country?")
 
 
 st.header("People from everywhere around the world don't have access to solid education")
 st.title("ChatGPT-like ChatBot")
-
-openai.api_key = st.secrets['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']
-
-if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
-
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-
-if prompt := st.chat_input("What is up?"):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
-    with st.chat_message("assistant"):
-        message_placeholder = st.empty()
-        full_response = ""
-        for response in openai.ChatCompletion.create(
-            model=st.session_state["openai_model"],
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
-        ):
-            full_response += response.choices[0].delta.get("content", "")
-            message_placeholder.markdown(full_response + "▌")
-        message_placeholder.markdown(full_response)
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
-
 
 
 
