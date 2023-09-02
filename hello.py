@@ -1,8 +1,6 @@
 import streamlit as st
 from PIL import Image
 
-st.sidebar.radio('Choose:',[1,2]
-
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
 st.header('st.button')
 with st.container():
@@ -30,4 +28,4 @@ st.write("hello 2")
 st.write("helloplease")
 
 
-
+st.sidebar.radio('Choose:',[1,2]
