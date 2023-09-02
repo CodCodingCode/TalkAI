@@ -1,14 +1,9 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
+from configure import auth_key
 
 
-upload = 
-transcript = 
-
-headers = {
-     "authorization": auth_key
-     "content-type": "application/json"
 
 st.set_page_config(page_title="TalkAI", page_icon=":globe_with_meridians", layout="wide")
 l, r, m = st.columns([1, 1, 1])
@@ -35,7 +30,7 @@ with st.container():
 # Insert a chat message container.
 with st.chat_message("user"):
      st.write("Hello 👋")
-     st.line_chart(np.random.randn(30, 3))
+     st.line_chart(np.random.randn(30, 5))
 
 # Display a chat input widget.
 st.chat_input("Say something")
