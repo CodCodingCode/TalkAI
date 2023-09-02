@@ -14,7 +14,7 @@ with r:
      }
      </style>
      """, unsafe_allow_html=True)
-     st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
+     st.markdown('<p class="big-font"> Verticai !!</p>', unsafe_allow_html=True)
      st.subheader("An AI mentor by your side!")
 
 with st.container():
