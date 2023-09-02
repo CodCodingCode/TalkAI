@@ -16,7 +16,7 @@ with r:
      </style>
      """, unsafe_allow_html=True)
      st.markdown('<p class="big-font"> Verticai</p>', unsafe_allow_html=True)
-          st.markdown("""
+     st.markdown("""
      <style>
      .big-font {
          font-size:50px !important;
