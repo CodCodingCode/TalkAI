@@ -26,7 +26,9 @@ with st.container():
           if st.button("+ Does TalkAI use Streamlit?"):
                st.write("yes!")
 
-st.slider("50", 0, 100, disabled=True)
+g = st.slider("50", 0, 100, disabled=True)
+for i in range(1, 50):
+     g += g
 
 
 # Insert a chat message container.
