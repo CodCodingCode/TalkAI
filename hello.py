@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 import requests
+import openai
 
 st.set_page_config(page_title="Verticai", page_icon=":School", layout="wide")
 l, r, m = st.columns([1, 1, 1])
@@ -52,9 +53,6 @@ with st.container():
 
 
 st.header("People from everywhere around the world don't have access to solid education")
-
-import openai
-
 st.title("ChatGPT-like ChatBot")
 
 openai.api_key = st.secrets['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']
