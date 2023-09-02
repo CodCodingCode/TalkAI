@@ -26,6 +26,3 @@ st.subheader("what is this")
 
 st.write("hello 2")
 st.write("helloplease")
-
-
-st.sidebar.radio('Choose:',[1,2]
